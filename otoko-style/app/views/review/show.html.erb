@@ -1,0 +1,18 @@
+<div class="contents">
+	<h3 class="search-result-h3">クチコミ詳細</h3>
+	<hr class="line">
+  <div class="review-discription">
+		<p>
+		【ニックネーム】<%= @nickname%>
+		</p>
+		<p>
+		【ブランド名】<%= @brand_name%>
+		</p>
+		<p>
+		<%= link_to '【商品名】'+@product_name, controller: "product", action: "show_an_item", search_id:@product_id %>
+		</p>
+		<p>
+		【クチコミ】<%= @description%>
+		</p>
+	</div>
+</div>

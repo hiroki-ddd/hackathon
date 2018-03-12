@@ -1,0 +1,32 @@
+<div class="contents">
+	<h3 class="search-result-h3">商品詳細</h3>
+	<hr class="line">
+	<div class="products-show">
+		<img src="<%= @url %>">
+		<p>
+		【商品名: 】<%= @product_name %>
+		</p>
+		<p>
+		【メーカー名: 】<%= @maker_name %>
+		</p>
+		<p>
+		【ブランド名: 】<%= @brand_name %>
+		</p>
+		<p>
+		【商品説明: 】<%= @description_item%>
+		</p>
+		<p>
+		【クチコミ件数: 】<%= @review_count %>
+		</p>
+		<% (0..@total_count.to_i-1).each do |n| %>
+			<hr class=product-line">
+			<p>
+				【名前】<%= @nickname[n] %><br>
+				【肌質】<%= @skin_type_name[n] %><br>
+				【おすすめ度】<%= @recommend[n] %><br>
+				【クチコミ】<%= @description[n] %><br>
+			</p>
+		<% end %>
+		<hr class="line" >
+	</div>
+</div>

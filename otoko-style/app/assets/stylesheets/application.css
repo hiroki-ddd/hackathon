@@ -1,0 +1,226 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html {
+    font-family: Helvetica, Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ ", Meiryo, sans-serif;
+ -webkit-text-size-adfust: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+	top: 0;
+}
+
+.navigation-bar{
+	height: 48px;
+	font-size: 18px;
+	margin: 0;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navigation-item{
+	color: white;
+	list-style: none;
+	float: left;
+	height: 48px;
+	display: table-cell;
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	vertical-align: middle;
+	transition: all .8s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navigation-item a {
+	color: white;
+	height: 48px;
+	display: table-cell;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header li:hover {
+	/* background-color: pink; */
+	transition: all .8s ease;
+}
+
+.navigation-item img{
+	width: 200px;
+	height: 48px;
+}
+
+.top-tytle{
+	width: 100%;
+	height: 600px;
+	font-size: 100px;
+	margin: 0;
+	color: white;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search-box{
+	width: 100%;
+	height: 64px;		
+	/* margin-top: 40px; */
+	margin-bottom: 40px;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+}
+
+input[type="text"] {
+    width: 300px;
+		height: 30px;
+		font-size: 20pt;
+		float: left;
+		border-width: 1px;
+		border-radius: 5px;
+		border-color: white;
+		padding-left: 5px;
+		color: white;
+		background-color: rgb(0,0,0,0);
+		
+}
+
+input[type="submit"] {
+  width: 80px;
+	height: 36px;
+	font-size: 16pt;
+	margin-left: 5px;
+	text-align: center;
+	float: left;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: white;
+	padding-left: 5px;
+	color: white;
+	background-color: rgb(0,0,0,0);
+	cursor: pointer;
+}
+
+.search-result{
+	width: 60%;
+	margin-top: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;color: black;
+	background-color: white;
+}
+
+.products-card{
+	width: 600px;
+	padding: 0;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+.product-card{
+	padding: 100px;
+	width: 600px;
+	height: 180px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.search-result-h3{
+	text-align: center;
+}
+
+.reviews-result{
+	width: 60%;
+	margin-top: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+.review-card{
+	width: 600px;
+	padding: 0;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+.review-card{
+	/* padding: 50px; */
+	width: 600px;
+	/* height: 180px; */
+	margin: 0 auto;
+	/* margin-bottom: 40px; */
+}
+
+.review-discription{
+	width: 600px;
+	margin: 0 auto;
+	margin-bottom: 200px;
+	margin-top: 200px;
+}
+
+.line{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.products-show{
+	width: 600px;
+	margin-top: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+.product-list{
+	width: 600px;
+	margin-top: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+.footer{
+	height: 80px;
+	margin-top: 200px;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 0;
+}
+
+.footer-p{
+	color: white;
+}

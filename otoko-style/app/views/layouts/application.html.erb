@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <html lang="ja">
+    <meta charset="utf-8">
+    <title>OtokoStyle</title>
+    <%= csrf_meta_tags %>
+    <meta name="keywords" content="コスメ,男性，化粧品，肌，おすすめ，クチコミ，口コミ，アイスタイル，@cosme，女性向け，洗顔，筋肉">
+    <meta name="description" content="男性向け美容情報サービス">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="author" content="HTMQ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="header">	
+      <ul class="navigation-bar">
+        <li class="navigation-item">
+          <%= link_to image_tag('otoko-style-logo.png'), "/" %>
+        </li>
+        <li class="navigation-item">
+          <%= link_to "クチコミ一覧", "/review/index" %>
+        </li>
+        <li class="navigation-item">
+          <%= link_to "商品一覧", "/product/show_list_item" %>
+        </li>
+      </ul>	
+		</div>
+
+    <%= yield %>
+
+    <div class="footer">
+      <p class="footer-p">copyright©Otoko-Sytle,inc.</p>
+    </div>
+  </body>
+</html>

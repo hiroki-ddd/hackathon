@@ -1,0 +1,31 @@
+<div class="contents">
+  <h1 class="top-tytle">
+    <%= image_tag('otoko-style-logo.png')%>
+  </h1>
+  <div class="search-box">
+    <%= form_tag({ :controller => 'home', :action => 'index' }, { :method => :get, :id => 'fm' }) do %>
+      <%= text_field_tag :fw, '', { :size => 25 } %>
+      <%= submit_tag '検索' %>
+    <% end %>
+  </div>
+
+  <div class="search-result">
+    <h3 class="search-result-h3">検索結果 ヒット数:<%= @num_item%></h3>
+    <hr>
+    <div class="prodcuts-card">
+      <% (0..@num_item.to_i-1).each do |n| %>
+        <div class="product-card">
+          <img src="<%= @image_url[n] %>" alt="画像なし">
+          <p>
+            【No.<%= n+1 %>】<br>
+            【<%= link_to @product_name[n], controller: "product", action: "show_an_item", search_id:@product_id[n] %>】<br>
+            【<%= @brand_name[n] %>】
+            【商品名】<%= @product_name[n] %>
+            【ブランド名】<%= @brand_name[n] %>
+          </p>
+        </div>
+        <hr class="line" >
+      <% end %>
+    </div>
+  </div>
+</div>

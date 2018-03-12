@@ -1,0 +1,18 @@
+<div class="contents">
+<h3 class="search-result-h3">商品一覧</h3>
+	<hr class="line">
+  <div class="product-list">
+    <% (0..@total_count.to_i-1).each do |n| %>
+    <img src="<%= @imageurl[n] %>" alt="画像なし">
+    <p>
+    【No.<%= n+1 %>】
+    </p>
+    <p>
+    【<%= @product_name[n] %>】
+    </p>
+    <p>
+    <%= link_to '詳細ページへ', controller: "product", action: "show_an_item", search_id:@product_id[n] %>
+    <p>
+    <hr class="line">
+    <% end %>
+</div>

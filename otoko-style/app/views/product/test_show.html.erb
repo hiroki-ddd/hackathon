@@ -1,0 +1,27 @@
+<h1>Product#index</h1>
+<p>Find me in app/views/product/index.html.erb</p>
+
+
+<p>
+郵便番号: <%= @zipcode %>
+</p>
+<p>
+都道府県: <%= @address1 %>
+</p>
+<p>
+市区町村: <%= @address2 %>
+</p>
+<p>
+町名: <%= @address3 %>
+</p>
+<p>
+<!-- リクエストパラメタを表示-->
+リクエストパラメタ: <%= @query%>
+</p>
+<!-- 生のjsonを表示-->
+result: <%= @result%>
+</p>
+<p>
+  <!-- エラーメッセージを表示-->
+message: <%= @message%>
+</p>
